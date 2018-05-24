@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+@font-face {
+  font-family: 'Penny';
+  src: url("./assets/fonts/penny.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'HeliosSemibold';
+  src: url("./assets/fonts/HeliosAntiqueSemiBold.tff") format("truetype"), url("./assets/fonts/HeliosAntiqueSemiBold.eot") format("embedded-opentype"), url("./assets/fonts/HeliosAntiqueSemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'HeliosBold';
+  src: url("./assets/fonts/HeliosAntiqueBold.tff") format("truetype"), url("./assets/fonts/HeliosAntiqueBold.eot") format("embedded-opentype"), url("./assets/fonts/HeliosAntiqueBold.woff") format("woff"); }
+
+.red {
+  background: red; }

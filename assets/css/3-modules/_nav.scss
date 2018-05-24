@@ -1,0 +1,87 @@
+//CSS regler for mobile navigation menu
+
+.navbar-mobile {
+  background-color: $beige-color;
+  border: none;
+  height: 56px;
+
+  li{
+    border-bottom: 1px solid $brown-color;
+
+    a{
+      font-family: $heliousBold;
+      font-weight: 700;
+      color: $brown-color !important;
+    }
+  }
+
+  .navbar-toggle {
+    border-color: transparent;
+
+    .icon-bar {
+      background-color: $brown-color;
+      width: 25px;
+      height: 4px;
+      border-radius: 2px;
+    }
+
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+
+    .middle-bar {
+      opacity: 0;
+    }
+
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: -4% 66%;
+    }
+
+    &:before {
+      content: 'MENU';
+      font-size: 17px;
+      font-family: $heliousBold;
+      font-weight: 700;
+      color: $brown-color;
+      position: absolute;
+      left: -47px;
+      bottom: 7px;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .navbar-collapse {
+    background-color: $beige-color;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  .navbar-toggle.collapsed {
+    .top-bar {
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+
+    .middle-bar {
+      opacity: 1;
+    }
+
+    .bottom-bar {
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+  }
+}

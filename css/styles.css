@@ -44,27 +44,27 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-.fcolor-white{
+.fcolor-white {
   color: #ffffff;
 }
 
-.fcolor-brown{
- color: #6e2626;
+.fcolor-brown {
+  color: #6e2626;
 }
 
-.fcolor-orange{
- color: #eaae48;
+.fcolor-orange {
+  color: #eaae48;
 }
 
-.fcolor-lightgreen{
- color: #58ae5c;
+.fcolor-lightgreen {
+  color: #58ae5c;
 }
 
-.fcolor-darkgreen{
+.fcolor-darkgreen {
   color: #568a5b;
 }
 
-.fcolor-beige{
+.fcolor-beige {
   color: #f4d19b;
 }
 
@@ -117,14 +117,14 @@ p {
   background-color: #58ae5c;
   position: absolute;
   left: 132px;
-  box-shadow: rgba(0,0,0,.117647) 0 5px 3px;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
 }
 
 .openbox .heading-heliosBold {
   font-size: 9px;
 }
 
-.black-overlay{
+.black-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -132,7 +132,6 @@ p {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-
 
 /************************************************
 
@@ -240,15 +239,14 @@ CSS REGLER FOR  NAVIGATIONEN
   }
 }
 
-
 /************************************************
 
 CSS REGLER FOR KNAPPER
 
 *************************************************/
 
-.btn{
-  box-shadow: rgba(0,0,0,.117647) 0 5px 3px;
+.btn {
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
   border-radius: 5px;
   width: 119px;
   height: 35px;
@@ -257,15 +255,14 @@ CSS REGLER FOR KNAPPER
   font-size: 13px;
 }
 
-.btn-green{
+.btn-green {
   background-color: #58ae5c;
   color: #ffffff;
 }
 
-.btn-green:focus{
+.btn-green:focus {
   color: #ffffff;
 }
-
 
 /************************************************
 
@@ -273,22 +270,27 @@ CSS REGLER FOR FOOTER
 
 *************************************************/
 
-footer{
+footer {
   background-color: #568a5b;
   padding: 20px 0;
   color: #ffffff;
 }
 
-footer .footer_title{
+footer .footer_title {
   font-family: 'heliosSemibold', sans-serif;
   font-weight: 600;
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
-footer .footer_info{
+footer .footer_info {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   line-height: 20px;
+}
+
+footer .footer__rapport {
+  max-width: 135px;
 }
 
 /************************************************
@@ -297,12 +299,87 @@ CSS REGLER FOR SECTIONS
 
 *************************************************/
 
-section.section-welcome{
+section.section-welcome {
   background: url(../images/test.jpg) no-repeat center center;
   background-size: cover;
   padding: 100px 0;
 }
 
-section.section-welcome .btn-green{
+section.section-welcome .btn-green {
   margin-top: 5px;
+}
+
+/************************************************
+
+CSS REGLER FOR SOCIALE MEDIER IKONER
+
+*************************************************/
+
+@font-face {
+  font-family: 'si';
+  src: url("../fonts/socicon.eot");
+  src: url("../fonts/socicon.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon.woff") format("woff"), url("../fonts/socicon.ttf") format("truetype"), url("../fonts/ocicon.svg#icomoonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: si;
+    src: url("../fonts/socicon.svg") format(svg);
+  }
+}
+
+.soc {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.soc li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.soc li a {
+  font-family: si !important;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  line-height: 33px;
+  font-size: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: #6e2626;
+}
+
+.soc-icon-last {
+  margin: 0 !important;
+}
+
+.soc-facebook:before {
+  content: '\e040';
+}
+
+.soc-instagram:before {
+  content: '\e057';
 }

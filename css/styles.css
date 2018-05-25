@@ -7,17 +7,17 @@ SEKTION FOR FONTS
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 @font-face {
   font-family: 'Penny';
-  src: url("./assets/fonts/penny.ttf") format("truetype");
+  src: url("../fonts/penny.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'HeliosSemibold';
-  src: url("./assets/fonts/HeliosAntiqueSemiBold.tff") format("truetype"), url("./assets/fonts/HeliosAntiqueSemiBold.eot") format("embedded-opentype"), url("./assets/fonts/HeliosAntiqueSemiBold.woff") format("woff");
+  src: url("../fonts/HeliosAntiqueSemiBold.tff") format("truetype"), url("../fonts/HeliosAntiqueSemiBold.eot") format("embedded-opentype"), url("../fonts/HeliosAntiqueSemiBold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'HeliosBold';
-  src: url("./assets/fonts/HeliosAntiqueBold.tff") format("truetype"), url("./assets/fonts/HeliosAntiqueBold.eot") format("embedded-opentype"), url("./assets/fonts/HeliosAntiqueBold.woff") format("woff");
+  src: url("../fonts/HeliosAntiqueBold.tff") format("truetype"), url("../fonts/HeliosAntiqueBold.eot") format("embedded-opentype"), url("../fonts/HeliosAntiqueBold.woff") format("woff");
 }
 
 /************************************************
@@ -130,7 +130,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /************************************************
@@ -216,7 +216,7 @@ CSS REGLER FOR  NAVIGATIONEN
   font-weight: 700;
   color: #6e2626;
   position: absolute;
-  left: -47px;
+  left: -54px;
   bottom: 7px;
 }
 
@@ -261,12 +261,14 @@ CSS REGLER FOR KNAPPER
 .btn {
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
   border-radius: 5px;
-  width: 119px;
-  height: 35px;
+  min-width: 150px;
+  padding: 14px 20px;
   font-family: 'HeliosBold', sans-serif;
   font-weight: 700;
   font-size: 13px;
 }
+
+/* Grøn knap */
 
 .btn-green {
   background-color: #58ae5c;
@@ -274,6 +276,13 @@ CSS REGLER FOR KNAPPER
 }
 
 .btn-green:focus {
+  color: #ffffff;
+}
+
+/*Orange knap*/
+
+.btn-orange {
+  background-color: #eaae48;
   color: #ffffff;
 }
 
@@ -341,6 +350,62 @@ section.section-openinghours {
 section.section-openinghours h3 {
   font-size: 13px;
   line-height: 1.8;
+}
+
+/** Section for mobile om os **/
+
+section.section-mobile-about {
+  background: url(../images/test.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 50px 19px;
+  position: relative;
+}
+
+section.section-mobile-about h3 {
+  font-size: 13px;
+  margin-top: 0;
+}
+
+/** Section for mobile sociale medier **/
+
+section.section-mobile-social {
+  padding: 37px 19px;
+}
+
+section.section-mobile-social h2{
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+}
+
+section.section-mobile-social h2:before{
+  content: "";
+  width: 43px;
+  height: 2px;
+  background-color: #6e2626;
+  position: absolute;
+  left: 46px;
+  top: 25px;
+}
+
+section.section-mobile-social h2:after{
+  content: "";
+  width: 43px;
+  height: 2px;
+  background-color: #6e2626;
+  position: absolute;
+  right: 46px;
+  top: 26px;
+}
+
+section.section-mobile-social .soc li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  font-size: 25px;
+  margin-right: 21px;
 }
 
 /************************************************

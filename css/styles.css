@@ -139,14 +139,14 @@ CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
 
 *************************************************/
 
-.logo{
+.logo {
   width: 65px;
   position: absolute;
   left: 29px;
   top: 7px;
 }
 
-.cart-icon{
+.cart-icon {
   width: 23px;
 }
 
@@ -166,7 +166,7 @@ CSS REGLER FOR  NAVIGATIONEN
   border-bottom: 1px solid #6e2626;
 }
 
-.navbar-mobile li:last-child{
+.navbar-mobile li:last-child {
   border-bottom: none;
 }
 
@@ -228,7 +228,6 @@ CSS REGLER FOR  NAVIGATIONEN
   background-color: #f4d19b;
   border-color: transparent;
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
-
 }
 
 .navbar-mobile .navbar-toggle.collapsed .top-bar {
@@ -251,10 +250,6 @@ CSS REGLER FOR  NAVIGATIONEN
   transform: rotate(0);
 }
 
-
-
-
-
 /************************************************
 
 CSS REGLER FOR KNAPPER
@@ -262,6 +257,7 @@ CSS REGLER FOR KNAPPER
 *************************************************/
 
 /* Generel CSS regler for knapper */
+
 .btn {
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
   border-radius: 5px;
@@ -316,6 +312,8 @@ CSS REGLER FOR SECTIONS
 
 *************************************************/
 
+/** Section for velkommen **/
+
 section.section-welcome {
   background: url(../images/test.jpg) no-repeat center center;
   background-size: cover;
@@ -327,8 +325,22 @@ section.section-welcome .btn-green {
   margin-top: 5px;
 }
 
-section.section-welcome .heading-area{
+section.section-welcome .heading-area {
   margin-top: 57px;
+}
+
+/** Section for åbningstider **/
+
+section.section-openinghours {
+  background: url(../images/test.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 50px 13px;
+  position: relative;
+}
+
+section.section-openinghours h3 {
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 /************************************************

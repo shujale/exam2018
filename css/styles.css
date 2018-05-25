@@ -219,6 +219,11 @@ CSS REGLER FOR  NAVIGATIONEN
 
 /************************************************
 
-CSS REGLER FOR  FOOTER 
+CSS REGLER FOR  FOOTER
 
 *************************************************/
+
+section.section-welcome{
+  padding: 150px 0;
+  background-image: url(./assets/images/test.jpg);
+}

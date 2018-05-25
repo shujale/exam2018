@@ -302,11 +302,16 @@ CSS REGLER FOR SECTIONS
 section.section-welcome {
   background: url(../images/test.jpg) no-repeat center center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 100px 13px;
+  position: relative;
 }
 
 section.section-welcome .btn-green {
   margin-top: 5px;
+}
+
+section.section-welcome .heading-area{
+  margin-top: 57px;
 }
 
 /************************************************

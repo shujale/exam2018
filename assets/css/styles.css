@@ -1,6 +1,6 @@
 /************************************************
 
-SEKTION FONT
+SEKTION FOR FONTS
 
 *************************************************/
 
@@ -19,6 +19,12 @@ SEKTION FONT
   font-family: 'HeliosBold';
   src: url("./assets/fonts/HeliosAntiqueBold.tff") format("truetype"), url("./assets/fonts/HeliosAntiqueBold.eot") format("embedded-opentype"), url("./assets/fonts/HeliosAntiqueBold.woff") format("woff");
 }
+
+/************************************************
+
+SEKTION FOR GENERELLE CSS REGLER
+
+*************************************************/
 
 .heading-penny {
   font-family: "Penny";
@@ -102,6 +108,13 @@ p {
 .openbox .heading-heliosBold {
   font-size: 9px;
 }
+
+
+/************************************************
+
+CSS REGLER FOR  NAVIGATIONEN
+
+*************************************************/
 
 .navbar-mobile {
   background-color: #f4d19b;
@@ -202,3 +215,10 @@ p {
     display: block;
   }
 }
+
+
+/************************************************
+
+CSS REGLER FOR  FOOTER 
+
+*************************************************/

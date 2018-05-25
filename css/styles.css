@@ -28,6 +28,7 @@ SEKTION FOR GENERELLE CSS REGLER
 
 .heading-penny {
   font-family: "Penny", serif;
+  letter-spacing: 2px;
 }
 
 .heading-heliosSemibold {
@@ -318,7 +319,7 @@ footer .footer__rapport {
 
 /************************************************
 
-CSS REGLER FOR SECTIONS
+CSS REGLER FOR SECTIONS PÅ FORSIDEN
 
 *************************************************/
 
@@ -339,19 +340,13 @@ section.section-welcome .heading-area {
   margin-top: 57px;
 }
 
-/** Section for åbningstider **/
+/** section for menu **/
 
-section.section-openinghours {
-  background: url(../images/test.jpg) no-repeat center center;
-  background-size: cover;
-  padding: 50px 13px;
-  position: relative;
+section.section-homepage-menu {
+  background-color: #6e2626;
+  padding: 10px 13px;
 }
 
-section.section-openinghours h3 {
-  font-size: 13px;
-  line-height: 1.8;
-}
 
 /** Section for mobile om os **/
 
@@ -367,19 +362,34 @@ section.section-mobile-about h3 {
   margin-top: 0;
 }
 
+/** Section for åbningstider **/
+
+section.section-openinghours {
+  background: url(../images/test.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 50px 13px;
+  position: relative;
+}
+
+section.section-openinghours h3 {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+
 /** Section for mobile sociale medier **/
 
 section.section-mobile-social {
   padding: 37px 19px;
 }
 
-section.section-mobile-social h2{
+section.section-mobile-social h2 {
   margin-bottom: 0;
   margin-top: 0;
   position: relative;
 }
 
-section.section-mobile-social h2:before{
+section.section-mobile-social h2:before {
   content: "";
   width: 43px;
   height: 2px;
@@ -389,7 +399,7 @@ section.section-mobile-social h2:before{
   top: 25px;
 }
 
-section.section-mobile-social h2:after{
+section.section-mobile-social h2:after {
   content: "";
   width: 43px;
   height: 2px;
@@ -399,7 +409,7 @@ section.section-mobile-social h2:after{
   top: 26px;
 }
 
-section.section-mobile-social .soc li a{
+section.section-mobile-social .soc li a {
   display: flex;
   justify-content: center;
   align-items: center;

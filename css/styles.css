@@ -135,6 +135,23 @@ p {
 
 /************************************************
 
+CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
+
+*************************************************/
+
+.logo{
+  width: 65px;
+  position: absolute;
+  left: 29px;
+  top: 7px;
+}
+
+.cart-icon{
+  width: 23px;
+}
+
+/************************************************
+
 CSS REGLER FOR  NAVIGATIONEN
 
 *************************************************/
@@ -147,6 +164,10 @@ CSS REGLER FOR  NAVIGATIONEN
 
 .navbar-mobile li {
   border-bottom: 1px solid #6e2626;
+}
+
+.navbar-mobile li:last-child{
+  border-bottom: none;
 }
 
 .navbar-mobile li a {
@@ -206,8 +227,8 @@ CSS REGLER FOR  NAVIGATIONEN
 .navbar-mobile .navbar-collapse {
   background-color: #f4d19b;
   border-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+
 }
 
 .navbar-mobile .navbar-toggle.collapsed .top-bar {
@@ -230,14 +251,9 @@ CSS REGLER FOR  NAVIGATIONEN
   transform: rotate(0);
 }
 
-@media (min-wdith: 992px) {
-  .navbar-mobile {
-    display: none;
-  }
-  .navbar-desktop {
-    display: block;
-  }
-}
+
+
+
 
 /************************************************
 
@@ -245,6 +261,7 @@ CSS REGLER FOR KNAPPER
 
 *************************************************/
 
+/* Generel CSS regler for knapper */
 .btn {
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
   border-radius: 5px;

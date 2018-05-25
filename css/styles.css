@@ -118,6 +118,7 @@ p {
   position: absolute;
   left: 132px;
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+  z-index: 999;
 }
 
 .openbox .heading-heliosBold {

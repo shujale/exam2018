@@ -135,6 +135,10 @@ p {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.height{
+  margin-bottom: 50px;
+}
+
 /************************************************
 
 CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
@@ -367,8 +371,7 @@ section.section-homepage-menu h2 {
   font-size: 39px;
 }
 
-section.section-homepage-menu .btn-green,
-section.section-homepage-menu .btn-brown-rev {
+section.section-homepage-menu .btn-green, section.section-homepage-menu .btn-brown-rev {
   margin-bottom: 23px;
 }
 
@@ -441,6 +444,80 @@ section.section-mobile-social .soc li a {
   font-size: 25px;
   margin-right: 21px;
 }
+
+/************************************************
+
+CSS REGLER FOR SECTIONS PÅ FORSIDEN
+
+*************************************************/
+
+section.section-menu {
+  padding: 50px 13px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+section.section-menu .heading-area {
+  margin-top: 77px;
+}
+
+section.section-menu h2 {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+section.section-menu h3:before {
+  content: "";
+  width: 43px;
+  height: 2px;
+  background-color: #6e2626;
+  position: absolute;
+  left: 54px;
+  top: 16px;
+}
+
+section.section-menu h3:after {
+  content: "";
+  width: 43px;
+  height: 2px;
+  background-color: #6e2626;
+  position: absolute;
+  right: 54px;
+  top: 18px;
+}
+
+section.section-menu .menu_item{
+  margin-bottom: 49px;
+}
+
+section.section-menu .menu_item .menu_img{
+  max-width: 95px;
+}
+
+section.section-menu .menu_item .menu_title{
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6e2626;
+  margin-bottom: 0;
+}
+
+section.section-menu .menu_item p{
+  font-family: 'Open Sans', sans-serif;
+  color: #6e2626;
+  font-size: 12px;
+}
+
+section.section-menu .menu_item .menu_price{
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #6e2626;
+
+}
+
+
 
 /************************************************
 

@@ -152,6 +152,10 @@ CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
   width: 23px;
 }
 
+.menu-arrows {
+  width: 16px !important;
+}
+
 /************************************************
 
 CSS REGLER FOR  NAVIGATIONEN
@@ -270,14 +274,14 @@ CSS REGLER FOR KNAPPER
   font-size: 13px;
 }
 
+btn:focus {
+  color: #ffffff;
+}
+
 /* Grøn knap */
 
 .btn-green {
   background-color: #58ae5c;
-  color: #ffffff;
-}
-
-.btn-green:focus {
   color: #ffffff;
 }
 
@@ -286,6 +290,18 @@ CSS REGLER FOR KNAPPER
 .btn-orange {
   background-color: #eaae48;
   color: #ffffff;
+}
+
+/* Brun knap */
+
+.btn-brown {
+  background-color: #6e2626;
+  color: #ffffff;
+}
+
+.btn-brown-rev {
+  background-color: #ffffff;
+  color: #6e2626;
 }
 
 /************************************************
@@ -347,6 +363,14 @@ section.section-homepage-menu {
   padding: 10px 13px;
 }
 
+section.section-homepage-menu h2 {
+  font-size: 39px;
+}
+
+section.section-homepage-menu .btn-green,
+section.section-homepage-menu .btn-brown-rev {
+  margin-bottom: 23px;
+}
 
 /** Section for mobile om os **/
 
@@ -375,7 +399,6 @@ section.section-openinghours h3 {
   font-size: 13px;
   line-height: 1.8;
 }
-
 
 /** Section for mobile sociale medier **/
 
@@ -492,4 +515,50 @@ CSS REGLER FOR SOCIALE MEDIER IKONER
 
 .soc-instagram:before {
   content: '\e057';
+}
+
+/************************************************
+
+CSS REGLER FOR CAROUSEL
+
+*************************************************/
+
+/* carousel */
+
+#menu-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Kontrol knapper  */
+
+#menu-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+/* Forrige knap  */
+
+#menu-carousel .carousel-control.left {
+  left: 15px;
+}
+
+/* Næste knap  */
+
+#menu-carousel .carousel-control.right {
+  right: 15px !important;
+}
+
+.item blockquote {
+  color: #ffffff;
+  font-size: 14px;
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote img {
+  margin-bottom: 10px;
 }

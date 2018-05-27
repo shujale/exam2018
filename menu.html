@@ -58,30 +58,57 @@
             <h3 class="heading-penny fcolor-brown fsize-lg">Husets speciale</h3>
           </div>
         </div>
-        <div class="height"></div>
         <!-- Menu indhold -->
         <div class="row">
           <div class="col-sm-6">
             <figure class="menu_item">
-              <img src="images/test.jpg" class="img-circle menu_img"/>
+              <img src="images/test.jpg" class="img-circle menu_img" />
               <h4 class="menu_title">Katjas cafeburger</h4>
               <p>Kylling, brød, ost, chilli & chilli </p>
               <h5 class="menu_price">65,-</h5>
-              <a href="#" class="btn btn-green ">Tilføj til kurv</a>
+              <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModal">Tilføj til kurv</button>
             </figure>
           </div>
           <div class="col-sm-6">
             <figure class="menu_item">
-              <img src="images/test.jpg" class="img-circle menu_img"/>
+              <img src="images/test.jpg" class="img-circle menu_img" />
               <h4 class="menu_title">Katjas cafeburger</h4>
               <p>Kylling, brød, ost, chilli & chilli </p>
               <h5 class="menu_price">65,-</h5>
-              <a href="#" class="btn btn-green ">Tilføj til kurv</a>
+              <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModal">Tilføj til kurv</button>
             </figure>
           </div>
         </div>
       </div>
     </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><img src="images/close.svg" alt="Close button" /></button>
+            <h4 class="modal-title">Katjas Cafeburger</h4>
+            <P>Kylling, brød, ost, chilli & chilli</P>
+            <h5 class="modal-price">65,-</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/test.jpg" class="img-circle menu_img" />
+            <h5>Hvor mange antal?</h5>
+            <input type="text" class="form-control">
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn btn-green" title="Gå til bestiling">Gå til bestilling</a>
+            <button type="button" class="btn btn-brown" data-dismiss="modal">Fortsæt indkøb</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
 
     <!-- Footer -->
     <footer>

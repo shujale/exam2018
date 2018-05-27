@@ -519,6 +519,112 @@ section.section-menu .menu_item .menu_price {
 
 /************************************************
 
+CSS REGLER FOR SECTIONS PÅ BESTILLINGS SIDEN
+
+*************************************************/
+
+section.section-order {
+  padding: 50px 13px;
+  background-color: #ffffff;
+}
+
+/** CSS regler for ordre indhold **/
+
+section.section-order .order-content {
+  padding-top: 73px;
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+section.section-order .order-content .order-box {
+  margin-bottom: 26px;
+  border-bottom: 1px solid #6e2626;
+}
+
+section.section-order .order-content h2 {
+  margin-bottom: 50px;
+}
+
+section.section-order .order-content .order-box h3 {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6e2626;
+  margin-bottom: 0;
+}
+
+section.section-order .order-content .order-box p {
+  font-family: 'Open Sans', sans-serif;
+  color: #6e2626;
+  font-size: 12px;
+}
+
+section.section-order .order-price-box {
+  display: flex;
+  background-color: #6e2626;
+  color: #ffffff;
+  border-radius: 6px;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+section.section-order .order-price-box h3 {
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/** CSS regler for ordre formular **/
+
+section.section-order .order-form {
+  margin-top: 70px;
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+section.section-order .order-form p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #6e2626;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.section-order .order-form .form-control {
+  margin: auto;
+  margin-bottom: 24px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+}
+
+section.section-order .order-form  input::placeholder,
+ section.section-order .order-form textarea::placeholder{
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 9px !important;
+  color: #b0b0b0 !important;
+}
+section.section-order .order-form .form-check label {
+ margin-right: 29px;
+}
+
+section.section-order .order-form .form-check label .label-text {
+  display: block;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 9px !important;
+  color: #6e2626 !important;
+}
+
+section.section-order .order-form  .btn-green{
+  margin-top: 30px;
+}
+
+/************************************************
+
 CSS REGLER FOR SOCIALE MEDIER IKONER
 
 *************************************************/
@@ -640,7 +746,7 @@ CSS REGLER FOR CAROUSEL
 
 /************************************************
 
-CSS REGLER FOR MODAL PÅ MOBILE
+CSS REGLER FOR POP OP VINDUE PÅ MOBILE
 
 *************************************************/
 

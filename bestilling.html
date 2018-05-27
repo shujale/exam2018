@@ -44,72 +44,69 @@
     </nav>
     <!-- Slut navigations menu for mobilen -->
 
-    <section class="section-menu">
+    <!-- Sektion for bestillings siden -->
+    <section class="section-order">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 heading-area">
-            <h2 class="heading-heliosSemibold fcolor-brown">Vi sætter høj pris på kvalitet og friskhed og sørger for af den grund for kun at smørre en sandwich eller anrette et af vores tyrkiske delikatesser på bestilling.</h2>
-          </div>
-        </div>
-        <div class="height"></div>
-        <!-- Menu title -->
+        <!-- Ordre oplysninger -->
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="heading-penny fcolor-brown fsize-lg">Husets speciale</h3>
+            <div class="order-content">
+              <!-- Overskrift -->
+              <h2 class="heading-heliosBold fsize-md fcolor-brown text-center text-uppercase">Din bestilling</h2>
+              <!-- Ordre 1 -->
+              <div class="order-box">
+                <h3>Katjas Cafeburger (2)</h3>
+                <p>Kylling, brød, ost, chilli & chilli </p>
+              </div>
+              <!-- Ordre 2 -->
+              <div class="order-box">
+                <h3>Katjas Cafeburger</h3>
+                <p>Kylling, brød, ost, chilli & chilli </p>
+              </div>
+              <!-- Ordre 3 -->
+              <div class="order-box">
+                <h3>Katjas Cafeburger</h3>
+                <p>Kylling, brød, ost, chilli & chilli </p>
+              </div>
+            </div>
+            <div class="order-price-box">
+              <h3>Pris i alt: 250,-</h3>
+            </div>
           </div>
         </div>
-        <!-- Menu indhold -->
-        <div class="row">
-          <div class="col-sm-6">
-            <figure class="menu_item">
-              <img src="images/test.jpg" class="img-circle menu_img" />
-              <h4 class="menu_title">Katjas cafeburger</h4>
-              <p>Kylling, brød, ost, chilli & chilli </p>
-              <h5 class="menu_price">65,-</h5>
-              <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModal">Tilføj til kurv</button>
-            </figure>
-          </div>
-          <div class="col-sm-6">
-            <figure class="menu_item">
-              <img src="images/test.jpg" class="img-circle menu_img" />
-              <h4 class="menu_title">Katjas cafeburger</h4>
-              <p>Kylling, brød, ost, chilli & chilli </p>
-              <h5 class="menu_price">65,-</h5>
-              <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModal">Tilføj til kurv</button>
-            </figure>
+        <!-- Indtast af oplysninger -->
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <form class="order-form">
+              <!-- Brødtekst omkring noget informationer -->
+              <p class="text-center"> Udfyld venligst dine informationer og ønsket afhentnings tidspunkt forneden. Så sikrer vi en hurtigere betjening og at din mad er frisklavede. </p>
+              <!-- Her begynder selve formularen -->
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Dit navn*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Din telefonnummer*">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Evt. andet kommentar?"></textarea>
+              </div>
+              <div class="form-check">
+                <label>
+                 <input type="checkbox" value="">
+                    <span class="label-text">Betal med MobilePay</span>
+                </label>
+                <label>
+                 <input type="checkbox" value="">
+                    <span class="label-text">Betal med kort</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-green">Bestil</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
-
-
-    <!-- Pop up vindue for det specifikke madvalg  -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-        <!-- Mad indhold-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><img src="images/close.svg" alt="Close button" /></button>
-            <h4 class="modal-title">Katjas Cafeburger</h4>
-            <P>Kylling, brød, ost, chilli & chilli</P>
-            <h5 class="modal-price">65,-</h5>
-          </div>
-          <div class="modal-body text-center">
-            <img src="images/test.jpg" class="img-circle menu_img" />
-            <h5>Hvor mange antal?</h5>
-            <input type="text" class="form-control">
-          </div>
-          <div class="modal-footer">
-            <!-- CTA knapper - enten gå til bestilling eller fortsætte indkøb -->
-            <a href="bestilling.html" class="btn btn-green" title="Gå til bestiling">Gå til bestilling</a>
-            <button type="button" class="btn btn-brown" data-dismiss="modal">Fortsæt indkøb</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
+    <!-- Slut sektion for bestillings siden -->
 
     <!-- Footer -->
     <footer>

@@ -509,14 +509,6 @@ section.section-menu .menu_item p {
   font-size: 12px;
 }
 
-section.section-menu .menu_item .menu_price {
-  font-family: 'HeliosBold', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #6e2626;
-  margin-bottom: 49px;
-}
-
 section.section-menu .menu_item .menu_img {
   max-width: 95px;
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;

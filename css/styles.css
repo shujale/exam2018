@@ -151,7 +151,6 @@ CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
   left: 29px;
   top: 7px;
 }
-
 .cart-icon {
   width: 23px;
 }
@@ -160,6 +159,13 @@ CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
   width: 16px !important;
 }
 
+@media(min-width:992px){
+    .logo_desk{
+        width: 100%;
+        padding: 2px;
+        margin: 20px 0px;
+    }
+}
 /************************************************
 
 CSS REGLER FOR NAVIGATIONEN MOBILE
@@ -277,7 +283,7 @@ CSS REGLER FOR NAVIGATIONEN DESKTOP
   .navbar-desktop {
     display: block;
     height: 100%;
-    max-width: 230px;
+    width: 17%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -293,7 +299,7 @@ CSS REGLER FOR NAVIGATIONEN DESKTOP
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-family: "heliosSemibold", sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     color: #6e2626 !important;
     display: block;
     margin-top: 10px
@@ -313,10 +319,9 @@ CSS REGLER FOR NAVIGATIONEN DESKTOP
     margin-top: 20px;
   }
   main {
-    margin-left: 235px;
-    /* skal være 5 px støre end width på navbar */
-    font-size: 28px;
+      width: 83%;
     position: absolute;
+    right: 0;
   }
 }
 

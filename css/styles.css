@@ -25,7 +25,11 @@ SEKTION FOR FONTS
 SEKTION FOR GENERELLE CSS REGLER
 
 *************************************************/
-
+@media(min-width:992px){
+    body{
+        overflow-x: hidden;
+    }
+}
 .heading-penny {
   font-family: "Penny", serif;
   letter-spacing: 2px;

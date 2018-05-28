@@ -162,9 +162,13 @@ CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
 
 /************************************************
 
-CSS REGLER FOR  NAVIGATIONEN
+CSS REGLER FOR NAVIGATIONEN MOBILE
 
 *************************************************/
+
+.navbar-desktop {
+  display: none;
+}
 
 .navbar-mobile {
   background-color: #f4d19b;
@@ -262,6 +266,62 @@ CSS REGLER FOR  NAVIGATIONEN
 
 /************************************************
 
+CSS REGLER FOR NAVIGATIONEN DESKTOP
+
+*************************************************/
+
+@media (min-width: 992px) {
+  .navbar-mobile {
+    display: none;
+  }
+  .navbar-desktop {
+    display: block;
+    height: 100%;
+    max-width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f4d19b;
+    overflow-x: hidden;
+    padding-top: 0px;
+  }
+  .navbar-desktop li {
+    list-style-type: none;
+  }
+  .navbar-desktop li a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: "heliosSemibold", sans-serif;
+    font-size: 17px;
+    color: #6e2626 !important;
+    display: block;
+    margin-top: 10px
+  }
+  .navbar-desktop li a:hover {
+    text-decoration: underline !important;
+    color: #58ae5c !important;
+  }
+  .navbar-desktop .logo {
+    width: 100%;
+    margin-bottom: 0px;
+    float: left"
+
+  }
+  .navbar-desktop .shop {
+    width: 18%;
+    margin-top: 20px;
+  }
+  main {
+    margin-left: 235px;
+    /* skal være 5 px støre end width på navbar */
+    font-size: 28px;
+    position: absolute;
+  }
+}
+
+/************************************************
+
 CSS REGLER FOR KNAPPER
 
 *************************************************/
@@ -314,6 +374,8 @@ CSS REGLER FOR FOOTER
 
 *************************************************/
 
+/** Css regler for mobile **/
+
 footer {
   background-color: #568a5b;
   padding: 20px 0;
@@ -335,6 +397,20 @@ footer .footer_info {
 
 footer .footer__rapport {
   max-width: 135px;
+}
+
+/** Css regler for footer desktop **/
+
+@media (min-width: 992px) {
+  footer .footer_title {
+    font-size: 20px;
+  }
+  footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+  }
 }
 
 /************************************************
@@ -451,22 +527,22 @@ CSS REGLER FOR SECTIONS PÅ MENU SIDEN
 
 *************************************************/
 
-section.section-menu {
+section.section-menu-mobile {
   padding: 50px 13px;
   background-color: #ffffff;
   text-align: center;
 }
 
-section.section-menu .heading-area {
+section.section-menu-mobile .heading-area {
   margin-top: 77px;
 }
 
-section.section-menu h2 {
+section.section-menu-mobile h2 {
   font-size: 14px;
   line-height: 19px;
 }
 
-section.section-menu h3:before {
+section.section-menu-mobile h3:before {
   content: "";
   width: 43px;
   height: 2px;
@@ -476,7 +552,7 @@ section.section-menu h3:before {
   top: 16px;
 }
 
-section.section-menu h3:after {
+section.section-menu-mobile h3:after {
   content: "";
   width: 43px;
   height: 2px;
@@ -486,15 +562,15 @@ section.section-menu h3:after {
   top: 18px;
 }
 
-section.section-menu .menu_item {
+section.section-menu-mobile .menu_item {
   margin-bottom: 49px;
 }
 
-section.section-menu .menu_item .menu_img {
+section.section-menu-mobile .menu_item .menu_img {
   max-width: 95px;
 }
 
-section.section-menu .menu_item .menu_title {
+section.section-menu-mobile .menu_item .menu_title {
   font-family: 'HeliosBold', sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -503,18 +579,18 @@ section.section-menu .menu_item .menu_title {
   margin-bottom: 0;
 }
 
-section.section-menu .menu_item p {
+section.section-menu-mobile .menu_item p {
   font-family: 'Open Sans', sans-serif;
   color: #6e2626;
   font-size: 12px;
 }
 
-section.section-menu .menu_item .menu_img {
+section.section-menu-mobile .menu_item .menu_img {
   max-width: 95px;
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
 }
 
-section.section-menu .menu_item .menu_title {
+section.section-menu-mobile .menu_item .menu_title {
   font-family: 'HeliosBold', sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -523,13 +599,13 @@ section.section-menu .menu_item .menu_title {
   margin-bottom: 0;
 }
 
-section.section-menu .menu_item p {
+section.section-menu-mobile .menu_item p {
   font-family: 'Open Sans', sans-serif;
   color: #6e2626;
   font-size: 12px;
 }
 
-section.section-menu .menu_item .menu_price {
+section.section-menu-mobile .menu_item .menu_price {
   font-family: 'HeliosBold', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -621,8 +697,7 @@ section.section-order .order-form .form-control {
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
 }
 
-section.section-order .order-form input::placeholder,
-section.section-order .order-form textarea::placeholder {
+section.section-order .order-form input::placeholder, section.section-order .order-form textarea::placeholder {
   font-family: 'Open Sans', sans-serif !important;
   font-size: 11px !important;
   color: #b0b0b0 !important;

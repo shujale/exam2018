@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <main>
+    <!-- Navigations menu for mobilen -->
+    <nav class="navbar navbar-default navbar-mobile navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar top-bar"></span>
+               <span class="icon-bar middle-bar"></span>
+               <span class="icon-bar bottom-bar"></span>
+             </button>
+          <a href="index.html" title="Katjas Sandwich & Salatbar"><img src="images/logo.svg" class="logo" alt="Katjas Sandwich & Salatbar" /></a>
+          <!-- Åben i dag boks -->
+          <div class="openbox">
+            <h6 class="text-center heading-heliosBold fcolor-white">ÅBEN I DAG <br /> TIL KL. 21:00</h6>
+          </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" title="Forside">Forside</a></li>
+            <li><a href="menu.html" title="Menu side">Menu</a></li>
+            <li><a href="om-os.html" title="Om caféen">Om caféen</a></li>
+            <li><a href="kontakt.html" title="Kontakt os">Kontakt os</a></li>
+            <li><a href="bestilling.html" title="Bestilling"><img src="images/kurv.svg" alt="Kurv til bestilling" class="cart-icon"/></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Slut navigations menu for mobilen -->
+
+    <!-- Sektion for bestillings siden -->
+    <section class="section-order">
+      <div class="container">
+        <!-- Ordre oplysninger -->
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="order-content">
+              <!-- Overskrift -->
+              <h2 class="heading-heliosBold fsize-md fcolor-brown text-center text-uppercase">Din bestilling</h2>
+              <!-- Ordre 1 -->
+              <div class="order-box">
+                <h3>Katjas Cafeburger (2)</h3>
+                <p>Kylling, brød, ost, chilli & chilli </p>
+              </div>
+              <!-- Ordre 2 -->
+              <div class="order-box">
+                <h3>Katjas Cafeburger</h3>
+                <p>Kylling, brød, ost, chilli & chilli </p>
+              </div>
+              <!-- Ordre 3 -->
+              <div class="order-box">
+                <h3>Katjas Cafeburger</h3>
+                <p>Kylling, brød, ost, chilli & chilli </p>
+              </div>
+            </div>
+            <div class="order-price-box">
+              <h3>Pris i alt: 250,-</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Indtast af oplysninger -->
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <form class="order-form">
+              <!-- Brødtekst omkring noget informationer -->
+              <p class="text-center"> Udfyld venligst dine informationer og ønsket afhentnings tidspunkt forneden. Så sikrer vi en hurtigere betjening og at din mad er frisklavede. </p>
+              <!-- Her begynder selve formularen -->
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Dit navn*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Din telefonnummer*">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Evt. andet kommentar?"></textarea>
+              </div>
+              <div class="form-check">
+                <label>
+                 <input type="checkbox" value="">
+                    <span class="label-text">Betal med MobilePay</span>
+                </label>
+                <label>
+                 <input type="checkbox" value="">
+                    <span class="label-text">Betal med kort</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-green">Bestil</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slut sektion for bestillings siden -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Footer sektion for kontakt informationer -->
+          <div class="col-sm-12">
+            <h3 class="footer_title">Kontakt oplysninger</h3>
+            <p class="footer_info">
+              Katjas Sandwich & Salatbar
+              <br /> Holsteinsgade 15
+              <br /> 8300 Odder
+              <br /> Telefonnummer: +45 86 54 54 64
+              <br /> Email: info@katjascafe.dk
+              <br />
+              <br /> CVR-nr.: 38719270
+            </p>
+          </div>
+          <!-- Footer sektion for åbningstider -->
+          <div class="col-sm-12">
+            <h3 class="footer_title">Åbningstider</h3>
+            <p class="footer_hours">
+              Åben 7 dage om ugen
+              <br /> <br />Mandag til fredag 10-20
+              <br /> Lørdag til søndag 11-20
+            </p>
+          </div>
+          <!-- Footer sektion for sociale medier -->
+          <div class="col-sm-12">
+            <h3 class="footer_title">Like og følg os på</h3>
+            <ul class="soc">
+              <li><a class="soc-facebook" href="#" title="Twitter"></a></li>
+              <li><a class="soc-instagram soc-icon-last" href="#" title="Instagram"></a></li>
+            </ul>
+          </div>
+          <!-- Footer sektion for kontrolrapport -->
+          <div class="col-sm-12">
+            <h3 class="footer_title">Se vores kontrolrapport</h3>
+            <a href="http://www.findsmiley.dk/712436" title="kontrolrapport"><img src="images/rapport.jpg" class="footer__rapport" alt="kontrolrapport" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- slut footer  -->
+
+  </main>
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

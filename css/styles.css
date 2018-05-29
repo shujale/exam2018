@@ -530,6 +530,12 @@ section.section-mobile-social .soc li a {
   margin-right: 21px;
 }
 
+@media(min-width:992px){
+    section.section-mobile-social{
+        display: none;
+    }
+}
+
 /************************************************
 
 CSS REGLER FOR SECTIONS PÅ MENU SIDEN

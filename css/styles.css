@@ -175,10 +175,6 @@ CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
   width: 16px !important;
 }
 
-.phone, .mail, .address {
-  width: 22px;
-}
-
 @media(min-width:992px) {
   .logo_desk {
     width: 100%;
@@ -474,6 +470,11 @@ section.section-homepage-menu h2 {
   font-size: 39px;
 }
 
+section.section-homepage-menu img {
+  width: 100px;
+}
+
+
 section.section-homepage-menu .btn-green, section.section-homepage-menu .btn-brown-rev {
   margin-bottom: 23px;
 }
@@ -492,6 +493,12 @@ section.section-mobile-about h3 {
   margin-top: 0;
 }
 
+/** Section for desk om os **/
+
+section.section-desk-about {
+  display: none;
+}
+
 /** Section for åbningstider **/
 
 section.section-openinghours {
@@ -501,9 +508,19 @@ section.section-openinghours {
   position: relative;
 }
 
-section.section-openinghours h3 {
+section.section-openinghours h2 {
+  color: #eaae48;
+}
+
+section.section-openinghours p {
   font-size: 13px;
   line-height: 1.8;
+  color: #ffffff;
+}
+
+/** Section for vi tilbyder **/
+section.section-offer-desk{
+  display: none;
 }
 
 /** Section for mobile sociale medier **/
@@ -552,10 +569,55 @@ section.section-mobile-social .soc li a {
   margin-right: 21px;
 }
 
-@media(min-width:992px){
-    section.section-mobile-social{
-        display: none;
-    }
+@media(min-width:992px) {
+  /* Css regler til sociale medier mobile */
+  section.section-mobile-social {
+    display: none;
+  }
+  /* Css regler til åbningstider **/
+  section.section-openinghours {
+    background: none;
+  }
+  section.section-openinghours h2 {
+    font-size: 60px;
+    color: #6e2626 !important;
+  }
+  section.section-openinghours p {
+    font-size: 20px;
+    color: #6e2626 !important;
+  }
+  section.section-openinghours .black-overlay {
+    display: none;
+  }
+  /* Css regler til om os mobile */
+  section.section-mobile-about {
+    display: none;
+  }
+  /** Css regler til desk om os **/
+  section.section-desk-about {
+    display: block;
+    padding: 68px 42px;
+  }
+  /* Css regler til menu sektion desk */
+  section.section-homepage-menu {
+    padding: 68px 13px;
+  }
+  section.section-homepage-menu h2 {
+    font-size: 60px;
+  }
+  section.section-homepage-menu .btn-green {
+    margin-right: 58px;
+  }
+  section.section-homepage-menu img {
+    width: 200px;
+  }
+  /* Css regler til vi tilbyder desk*/
+  section.section-offer-desk {
+    display: block;
+  }
+  section.section-offer-desk img {
+    width: 150px;
+  }
 }
 
 /************************************************

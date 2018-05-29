@@ -210,6 +210,7 @@ CSS REGLER FOR NAVIGATIONEN MOBILE
 
 .navbar-mobile .navbar-toggle {
   border-color: transparent;
+  margin-top: 15px;
 }
 
 .navbar-mobile .navbar-toggle .icon-bar {
@@ -783,14 +784,15 @@ section.section-contact-mobile .contact-info-box .contact-info-meta p {
 }
 
 /** Css regler for kontaktoplysninger **/
-section.section-contact-mobile .contact-form-container{
+
+section.section-contact-mobile .contact-form-container {
   background-color: #6e2626;
   border-radius: 6px;
   margin-top: 21px;
   padding: 20px 14px;
 }
 
-section.section-contact-mobile .contact-form-container .contact-form-meta h3{
+section.section-contact-mobile .contact-form-container .contact-form-meta h3 {
   font-family: 'HeliosBold', sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -798,21 +800,70 @@ section.section-contact-mobile .contact-form-container .contact-form-meta h3{
   text-transform: uppercase;
 }
 
-section.section-contact-mobile .contact-form-container .contact-form-meta p{
+section.section-contact-mobile .contact-form-container .contact-form-meta p {
   font-family: 'Open sans', sans-serif;
   font-size: 13px;
   color: #ffffff;
   margin-bottom: 30px;
 }
 
-section.section-contact-mobile .contact-form-container .form-control{
+/** Css regler for kontaktformular **/
+
+section.section-contact-mobile .contact-form-container .form-control {
   border: none;
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
   margin-bottom: 21px;
 }
 
-section.section-contact-mobile .contact-form-container .btn{
+section.section-contact-mobile .contact-form-container .btn {
   margin-bottom: 26px;
+}
+
+/** Css regler Google Map **/
+
+section.section-contact-mobile .heading-area {
+  margin-top: 41px;
+  margin-bottom: 41;
+}
+
+section.section-contact-mobile .heading-area h3 {
+  display: block;
+  overflow: hidden;
+}
+
+section.section-contact-mobile .heading-area h3:before, section.section-contact-mobile .heading-area h3:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: #6e2626;
+  position: relative;
+  vertical-align: middle;
+}
+
+section.section-contact-mobile .heading-area h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+section.section-contact-mobile .heading-area h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /************************************************

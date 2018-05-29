@@ -115,21 +115,30 @@ p {
   font-size: 120px;
 }
 
-.openbox {
+#open-close-box {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100px;
-  height: 66px;
+  height: 83px;
   background-color: #58ae5c;
+  color: #ffffff;
+  text-align: center;
   position: absolute;
   left: 132px;
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
   z-index: 999;
 }
 
-.openbox .heading-heliosBold {
+#open-close-box span{
+  display: flex;
+  align-items: center;
   font-size: 9px;
+  font-family: 'heliosBold', sans-serif;
+  font-weight: 700;
+}
+
+.open, .closed{
+  display: none;
 }
 
 .black-overlay {
@@ -187,7 +196,7 @@ CSS REGLER FOR NAVIGATIONEN MOBILE
 .navbar-mobile {
   background-color: #f4d19b;
   border: none;
-  height: 56px;
+  height: 73px;
 }
 
 .navbar-mobile li {
@@ -206,6 +215,7 @@ CSS REGLER FOR NAVIGATIONEN MOBILE
 
 .navbar-mobile .navbar-toggle {
   border-color: transparent;
+  margin-top: 15px;
 }
 
 .navbar-mobile .navbar-toggle .icon-bar {
@@ -515,34 +525,38 @@ section.section-offer-desk{
 
 /** Section for mobile sociale medier **/
 
+section.section-contact-mobile .heading-area h3 {
+  display: block;
+  overflow: hidden;
+}
+
 section.section-mobile-social {
   padding: 37px 19px;
 }
 
 section.section-mobile-social h2 {
-  margin-bottom: 0;
-  margin-top: 0;
+  display: block;
+  overflow: hidden;
+}
+
+section.section-mobile-social h2:before, section.section-mobile-social h2:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: #6e2626;
   position: relative;
+  vertical-align: middle;
 }
 
 section.section-mobile-social h2:before {
-  content: "";
-  width: 43px;
-  height: 2px;
-  background-color: #6e2626;
-  position: absolute;
-  left: 39px;
-  top: 25px;
+  right: 0.5em;
+  margin-left: -50%;
 }
 
 section.section-mobile-social h2:after {
-  content: "";
-  width: 43px;
-  height: 2px;
-  background-color: #6e2626;
-  position: absolute;
-  right: 39px;
-  top: 26px;
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 section.section-mobile-social .soc li a {
@@ -805,6 +819,121 @@ section.section-order .order-form .btn-green {
 
 /************************************************
 
+CSS REGLER FOR SECTIONS PÅ KONTAKT SIDEN PÅ MOBILE
+
+*************************************************/
+
+section.section-contact-mobile {
+  padding: 50px 13px;
+  background-color: #ffffff;
+}
+
+/** Css regler for kontaktoplysninger **/
+
+section.section-contact-mobile .contact-info-box {
+  background-color: #6e2626;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+section.section-contact-mobile .contact-info-box:first-child {
+  margin-top: 50px;
+}
+
+section.section-contact-mobile .contact-info-box .contact-info-meta {
+  display: inline-block;
+}
+
+section.section-contact-mobile .contact-info-box img {
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
+section.section-contact-mobile .contact-info-box .contact-info-meta h3 {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #eaae48;
+  margin-bottom: 0;
+}
+
+section.section-contact-mobile .contact-info-box .contact-info-meta p {
+  font-family: 'Open sans', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/** Css regler for kontaktoplysninger **/
+
+section.section-contact-mobile .contact-form-container {
+  background-color: #6e2626;
+  border-radius: 6px;
+  margin-top: 21px;
+  padding: 20px 14px;
+}
+
+section.section-contact-mobile .contact-form-container .contact-form-meta h3 {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #eaae48;
+  text-transform: uppercase;
+}
+
+section.section-contact-mobile .contact-form-container .contact-form-meta p {
+  font-family: 'Open sans', sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/** Css regler for kontaktformular **/
+
+section.section-contact-mobile .contact-form-container .form-control {
+  border: none;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+  margin-bottom: 21px;
+}
+
+section.section-contact-mobile .contact-form-container .btn {
+  margin-bottom: 26px;
+}
+
+/** Css regler Google Map **/
+
+section.section-contact-mobile .heading-area {
+  margin-top: 41px;
+  margin-bottom: 41;
+}
+
+section.section-contact-mobile .heading-area h3 {
+  display: block;
+  overflow: hidden;
+}
+
+section.section-contact-mobile .heading-area h3:before, section.section-contact-mobile .heading-area h3:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: #6e2626;
+  position: relative;
+  vertical-align: middle;
+}
+
+section.section-contact-mobile .heading-area h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+section.section-contact-mobile .heading-area h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/************************************************
+
 CSS REGLER FOR SOCIALE MEDIER IKONER
 
 *************************************************/
@@ -871,7 +1000,7 @@ CSS REGLER FOR SOCIALE MEDIER IKONER
 }
 
 .soc-facebook:before {
-  content: '\e040';
+  content: '\e041';
 }
 
 .soc-instagram:before {
@@ -880,7 +1009,7 @@ CSS REGLER FOR SOCIALE MEDIER IKONER
 
 /************************************************
 
-CSS REGLER FOR CAROUSEL
+CSS REGLER FOR CAROUSEL/SLIDER
 
 *************************************************/
 

@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
   <!-- Navigations menu for mobilen -->
   <nav class="navbar navbar-default navbar-mobile navbar-fixed-top">
     <div class="container">
@@ -24,7 +25,7 @@
                <span class="icon-bar middle-bar"></span>
                <span class="icon-bar bottom-bar"></span>
              </button>
-        <a href="index.html" title="Katjas Sandwich & Salatbar"><img src="images/logo.svg" class="logo" alt="Katjas Sandwich & Salatbar" /></a>
+        <a href="index.html" title="Katjas Sandwich & Salatbar"><img src="images/logo.svg" class="logo" alt="Katjas logo" /></a>
         <!-- Åben i dag boks -->
         <div class="openbox">
           <h6 class="text-center heading-heliosBold fcolor-white">ÅBEN I DAG <br /> TIL KL. 21:00</h6>
@@ -62,79 +63,81 @@
   <!-- Navigations menu for desktop -->
 
   <main>
-    <section class="section-menu-mobile">
+    <section class="section-contact-mobile">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 heading-area">
-            <h2 class="heading-heliosSemibold fcolor-brown">Vi sætter høj pris på kvalitet og friskhed og sørger for af den grund for kun at smørre en sandwich eller anrette et af vores tyrkiske delikatesser på bestilling.</h2>
-          </div>
-        </div>
-        <div class="height"></div>
-        <!-- Menu title -->
+        <!-- Kontakt oplysninger -->
         <div class="row">
           <div class="col-sm-12">
-            <h3 class="heading-penny fcolor-brown fsize-lg">Husets speciale</h3>
+            <!-- Tlf nr. -->
+            <div class="contact-info-box">
+              <img src="images/phone.svg" class="phone" alt="Telefonnummer" />
+              <div class="contact-info-meta">
+                <h3>Telefonnummer</h3>
+                <p>86 54 54 64 </p>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="contact-info-box">
+              <img src="images/mail.svg" class="mail" alt="Telefonnummer" />
+              <div class="contact-info-meta">
+                <h3>Email</h3>
+                <p>info@katjascafe.dk</p>
+              </div>
+            </div>
+            <!-- Adresse -->
+            <div class="contact-info-box">
+              <img src="images/address.svg" class="address" alt="Telefonnummer" />
+              <div class="contact-info-meta">
+                <h3>Adresse</h3>
+                <p>Holsteinsgade 15 8300 Odder</p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Menu indhold -->
+        <!-- Kontaktformular for firmaer og offentlige -->
         <div class="row">
-          <div class="col-sm-6">
-            <figure class="menu_item">
-              <img src="images/test.jpg" class="img-circle menu_img" />
-              <h4 class="menu_title">Katjas cafeburger</h4>
-              <p>Kylling, brød, ost, chilli & chilli </p>
-              <h5 class="menu_price">65,-</h5>
-              <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModal">Tilføj til kurv</button>
-            </figure>
+          <div class="col-sm-12">
+            <form class="contact-form-container">
+              <!-- Overskrift + brødtekst -->
+              <div class="contact-form-meta">
+                <h3 class="text-center">Kontaktformular for firmaer</h3>
+                <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <!-- Selve formularen starter her -->
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Dit navn*" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Din telefonnummer*" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Din e-mail*" required>
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Din EAN-nr.*" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Evt. andet bemærkninger?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-green">Send besked</button>
+            </form>
           </div>
-          <div class="col-sm-6">
-            <figure class="menu_item">
-              <img src="images/test.jpg" class="img-circle menu_img" />
-              <h4 class="menu_title">Katjas cafeburger</h4>
-              <p>Kylling, brød, ost, chilli & chilli </p>
-              <h5 class="menu_price">65,-</h5>
-              <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModal">Tilføj til kurv</button>
-            </figure>
-          </div>
+        </div>
+        <!-- Find os her -->
+        <div class="row text-center">
+          <div class="col-sm-12 heading-area">
+            <h3 class="fsize-xl fcolor-brown heading-penny">Find os her</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.71879872073!2d10.144997115665337!3d55.97157508061245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c42d19ee7e763%3A0xd2d1d81f186d7259!2sHolsteinsgade+15%2C+8300+Odder!5e0!3m2!1sen!2sdk!4v1527586758646"
+              width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> </div>
         </div>
       </div>
     </section>
-
-
-    <!-- Pop up vindue for det specifikke madvalg  -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-        <!-- Mad indhold-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><img src="images/close.svg" alt="Close button" /></button>
-            <h4 class="modal-title">Katjas Cafeburger</h4>
-            <P>Kylling, brød, ost, chilli & chilli</P>
-            <h5 class="modal-price">65,-</h5>
-          </div>
-          <div class="modal-body text-center">
-            <img src="images/test.jpg" class="img-circle menu_img" />
-            <h5>Hvor mange antal?</h5>
-            <input type="text" class="form-control">
-          </div>
-          <div class="modal-footer">
-            <!-- CTA knapper - enten gå til bestilling eller fortsætte indkøb -->
-            <a href="bestilling.html" class="btn btn-green" title="Gå til bestiling">Gå til bestilling</a>
-            <button type="button" class="btn btn-brown" data-dismiss="modal">Fortsæt indkøb</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
           <!-- Footer sektion for kontakt informationer -->
-          <div class="col-sm-12 col-md-3">
+          <div class="col-sm-12 col-md-4 col-lg-3">
             <h3 class="footer_title">Kontakt oplysninger</h3>
             <p class="footer_info">
               Katjas Sandwich & Salatbar
@@ -147,7 +150,7 @@
             </p>
           </div>
           <!-- Footer sektion for åbningstider -->
-          <div class="col-sm-12 col-md-3">
+          <div class="col-sm-12 col-md-4 col-lg-3">
             <h3 class="footer_title">Åbningstider</h3>
             <p class="footer_hours">
               Åben 7 dage om ugen
@@ -156,7 +159,7 @@
             </p>
           </div>
           <!-- Footer sektion for sociale medier -->
-          <div class="col-sm-12 col-md-3">
+          <div class="col-sm-12 col-md-4 col-lg-3">
             <h3 class="footer_title">Like og følg os på</h3>
             <ul class="soc">
               <li><a class="soc-facebook" href="#" title="Twitter"></a></li>
@@ -164,7 +167,7 @@
             </ul>
           </div>
           <!-- Footer sektion for kontrolrapport -->
-          <div class="col-sm-12 col-md-3">
+          <div class="col-sm-12 col-md-4 col-lg-3">
             <h3 class="footer_title">Se vores kontrolrapport</h3>
             <a href="http://www.findsmiley.dk/712436" title="kontrolrapport"><img src="images/rapport.jpg" class="footer__rapport" alt="kontrolrapport" /></a>
           </div>
@@ -174,6 +177,7 @@
     <!-- slut footer  -->
 
   </main>
+
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

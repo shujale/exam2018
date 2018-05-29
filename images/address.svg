@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.075 22.193">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eaae48;
+      }
+    </style>
+  </defs>
+  <g id="maps-and-flags" transform="translate(-70.573)">
+    <g id="Group_41" data-name="Group 41" transform="translate(70.573)">
+      <path id="Path_37" data-name="Path 37" class="cls-1" d="M78.611,0a8.047,8.047,0,0,0-8.038,8.037c0,5.5,7.193,13.575,7.5,13.916a.724.724,0,0,0,1.077,0c.306-.341,7.5-8.415,7.5-13.916A8.047,8.047,0,0,0,78.611,0Zm0,12.081a4.044,4.044,0,1,1,4.044-4.044A4.048,4.048,0,0,1,78.611,12.081Z" transform="translate(-70.573)"/>
+    </g>
+  </g>
+</svg>

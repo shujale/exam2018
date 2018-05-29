@@ -14,36 +14,54 @@
 </head>
 
 <body>
-  <main>
-    <!-- Navigations menu for mobilen -->
-    <nav class="navbar navbar-default navbar-mobile navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <!-- Navigations menu for mobilen -->
+  <nav class="navbar navbar-default navbar-mobile navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                <span class="sr-only">Toggle navigation</span>
                <span class="icon-bar top-bar"></span>
                <span class="icon-bar middle-bar"></span>
                <span class="icon-bar bottom-bar"></span>
              </button>
-          <a href="index.html" title="Katjas Sandwich & Salatbar"><img src="images/logo.svg" class="logo" alt="Katjas Sandwich & Salatbar" /></a>
-          <!-- Åben i dag boks -->
-          <div class="openbox">
-            <h6 class="text-center heading-heliosBold fcolor-white">ÅBEN I DAG <br /> TIL KL. 21:00</h6>
-          </div>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html" title="Forside">Forside</a></li>
-            <li><a href="menu.html" title="Menu side">Menu</a></li>
-            <li><a href="om-os.html" title="Om caféen">Om caféen</a></li>
-            <li><a href="kontakt.html" title="Kontakt os">Kontakt os</a></li>
-            <li><a href="bestilling.html" title="Bestilling"><img src="images/kurv.svg" alt="Kurv til bestilling" class="cart-icon"/></a></li>
-          </ul>
+        <a href="index.html" title="Katjas Sandwich & Salatbar"><img src="images/logo.svg" class="logo" alt="Katjas Sandwich & Salatbar" /></a>
+        <!-- Åben i dag boks -->
+        <div class="openbox">
+          <h6 class="text-center heading-heliosBold fcolor-white">ÅBEN I DAG <br /> TIL KL. 21:00</h6>
         </div>
       </div>
-    </nav>
-    <!-- Slut navigations menu for mobilen -->
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html" title="Forside">Forside</a></li>
+          <li><a href="menu.html" title="Menu side">Menu</a></li>
+          <li><a href="om-os.html" title="Om caféen">Om caféen</a></li>
+          <li><a href="kontakt.html" title="Kontakt os">Kontakt os</a></li>
+          <li><a href="bestilling.html" title="Bestilling"><img src="images/kurv.svg" alt="Kurv til bestilling" class="cart-icon"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Slut navigations menu for mobilen -->
 
+  <!-- Navigations menu for desktop -->
+  <div class="navbar-desktop">
+    <a>
+        <img class="logo_desk" src="images/logo.svg" alt="Katjas Logo">
+        </a>
+    <ul id="navbar_ul">
+      <li><a href="index.html">Forside</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="om-os.html">Om caféen</a></li>
+      <li><a href="services.html">Vi tilbyder</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li>
+        <a id="a_navbar" href="#bestilling"><img class="shop" src="images/kurv.svg" alt="bestilling" style="float:left" ;></a>
+      </li>
+    </ul>
+  </div>
+  <!-- Navigations menu for desktop -->
+
+  <main>
     <section class="section-menu-mobile">
       <div class="container">
         <div class="row">
@@ -100,7 +118,7 @@
             <input type="text" class="form-control">
           </div>
           <div class="modal-footer">
-              <!-- CTA knapper - enten gå til bestilling eller fortsætte indkøb -->
+            <!-- CTA knapper - enten gå til bestilling eller fortsætte indkøb -->
             <a href="bestilling.html" class="btn btn-green" title="Gå til bestiling">Gå til bestilling</a>
             <button type="button" class="btn btn-brown" data-dismiss="modal">Fortsæt indkøb</button>
           </div>

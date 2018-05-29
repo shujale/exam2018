@@ -61,6 +61,7 @@
     </ul>
   </div>
   <!-- Navigations menu for desktop -->
+
   <main>
     <section class="section-contact-mobile">
       <div class="container">
@@ -95,9 +96,32 @@
         </div>
         <!-- Kontaktformular for firmaer og offentlige -->
         <div class="row">
-          <form class="contact-form-container">
-
-          </form>
+          <div class="col-sm-12">
+            <form class="contact-form-container">
+              <!-- Overskrift + brødtekst -->
+              <div class="contact-form-meta">
+                <h3 class="text-center">Kontaktformular for firmaer</h3>
+                <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <!-- Selve formularen starter her -->
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Dit navn*" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Din telefonnummer*" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Din e-mail*" required>
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Din EAN-nr.*" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Evt. andet bemærkninger?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-green">Send besked</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

@@ -115,21 +115,30 @@ p {
   font-size: 120px;
 }
 
-.openbox {
+#open-close-box {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100px;
   height: 83px;
   background-color: #58ae5c;
+  color: #ffffff;
+  text-align: center;
   position: absolute;
   left: 132px;
   box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
   z-index: 999;
 }
 
-.openbox .heading-heliosBold {
+#open-close-box span{
+  display: flex;
+  align-items: center;
   font-size: 9px;
+  font-family: 'heliosBold', sans-serif;
+  font-weight: 700;
+}
+
+.open, .closed{
+  display: none;
 }
 
 .black-overlay {

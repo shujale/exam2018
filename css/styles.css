@@ -115,7 +115,7 @@ p {
   font-size: 120px;
 }
 
-.open-close-box {
+.openbox {
   display: flex;
   justify-content: center;
   align-items: center;

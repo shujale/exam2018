@@ -118,7 +118,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 100px;
-  height: 66px;
+  height: 83px;
   background-color: #58ae5c;
   position: absolute;
   left: 132px;
@@ -163,6 +163,12 @@ CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
   width: 16px !important;
 }
 
+.phone,
+.mail,
+.address{
+  width: 22px;
+}
+
 @media(min-width:992px){
     .logo_desk{
         width: 100%;
@@ -183,7 +189,7 @@ CSS REGLER FOR NAVIGATIONEN MOBILE
 .navbar-mobile {
   background-color: #f4d19b;
   border: none;
-  height: 56px;
+  height: 73px;
 }
 
 .navbar-mobile li {
@@ -726,6 +732,51 @@ section.section-order .order-form .form-check label .label-text {
 section.section-order .order-form .btn-green {
   margin-top: 30px;
 }
+
+/************************************************
+
+CSS REGLER FOR SECTIONS PÅ KONTAKT SIDEN PÅ MOBILE
+
+*************************************************/
+
+section.section-contact-mobile {
+  padding: 50px 13px;
+  background-color: #ffffff;
+}
+
+/** Css regler for kontaktoplysninger **/
+section.section-contact-mobile .contact-info-box{
+  background-color: #6e2626;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+section.section-contact-mobile .contact-info-box:first-child{
+  margin-top: 50px;
+}
+section.section-contact-mobile .contact-info-box .contact-info-meta{
+ display: inline-block;
+}
+section.section-contact-mobile .contact-info-box img{
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
+section.section-contact-mobile .contact-info-box .contact-info-meta h3{
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #eaae48;
+  margin-bottom: 0;
+}
+
+section.section-contact-mobile .contact-info-box .contact-info-meta p{
+  font-family: 'Open sans', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+
 
 /************************************************
 

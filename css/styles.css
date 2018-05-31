@@ -175,8 +175,12 @@ CSS REGLER FOR BILLEDFORMAT (JPG, PNG, SVG) OG LOGO
   width: 16px !important;
 }
 
-.phone, .mail, .address{
+.phone, .mail, .address {
   width: 25px;
+}
+
+.insta {
+  width: 46px;
 }
 
 @media(min-width:992px) {
@@ -619,13 +623,11 @@ section.section-bye {
     display: block;
     padding: 68px 42px;
   }
-
-  section.section-desk-about img{
+  section.section-desk-about img {
     width: 113px;
     margin-top: 21px;
     margin-left: 6px;
   }
-
   /* Css regler til menu sektion desk */
   section.section-homepage-menu {
     padding: 68px 13px;
@@ -676,12 +678,13 @@ section.section-bye {
   section.section-welcome .heading-area .desk-welcome {
     display: block;
     margin-right: 40px;
+    margin-bottom: 145px;
   }
   section.section-welcome .heading-area .desk-welcome h3 {
     font-size: 70px;
     margin-bottom: 0;
   }
-  section.section-welcome .heading-area .desk-welcome  p {
+  section.section-welcome .heading-area .desk-welcome p {
     font-size: 25px;
     margin-bottom: 20px;
   }
@@ -690,433 +693,651 @@ section.section-bye {
     margin-right: 20px;
   }
 }
-  /************************************************
+
+/************************************************
 
 CSS REGLER FOR SECTIONS PÅ MENU SIDEN
 
 *************************************************/
-  section.section-menu-mobile {
-    padding: 50px 13px;
-    background-color: #ffffff;
-    text-align: center;
-  }
-  section.section-menu-mobile .heading-area {
-    margin-top: 77px;
-  }
-  section.section-menu-mobile h2 {
-    font-size: 14px;
-    line-height: 19px;
-  }
-  section.section-menu-mobile h3:before {
-    content: "";
-    width: 43px;
-    height: 2px;
-    background-color: #6e2626;
-    position: absolute;
-    left: 54px;
-    top: 16px;
-  }
-  section.section-menu-mobile h3:after {
-    content: "";
-    width: 43px;
-    height: 2px;
-    background-color: #6e2626;
-    position: absolute;
-    right: 54px;
-    top: 18px;
-  }
-  section.section-menu-mobile .menu_item {
-    margin-bottom: 49px;
-  }
-  section.section-menu-mobile .menu_item .menu_img {
-    max-width: 95px;
-  }
-  section.section-menu-mobile .menu_item .menu_title {
-    font-family: 'HeliosBold', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #6e2626;
-    margin-bottom: 0;
-  }
-  section.section-menu-mobile .menu_item p {
-    font-family: 'Open Sans', sans-serif;
-    color: #6e2626;
-    font-size: 12px;
-  }
-  section.section-menu-mobile .menu_item .menu_img {
-    max-width: 95px;
-    box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
-  }
-  section.section-menu-mobile .menu_item .menu_title {
-    font-family: 'HeliosBold', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #6e2626;
-    margin-bottom: 0;
-  }
-  section.section-menu-mobile .menu_item p {
-    font-family: 'Open Sans', sans-serif;
-    color: #6e2626;
-    font-size: 12px;
-  }
-  section.section-menu-mobile .menu_item .menu_price {
-    font-family: 'HeliosBold', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: #6e2626;
-  }
-  /************************************************
+
+section.section-menu-mobile {
+  padding: 50px 13px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+section.section-menu-mobile .heading-area {
+  margin-top: 77px;
+}
+
+section.section-menu-mobile h2 {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+section.section-menu-mobile h3:before, section.section-menu-mobile h3:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: #6e2626;
+  position: relative;
+  vertical-align: middle;
+}
+
+section.section-menu-mobile h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+section.section-menu-mobile h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+section.section-menu-mobile .menu_item {
+  margin-bottom: 49px;
+}
+
+section.section-menu-mobile .menu_item .menu_img {
+  max-width: 95px;
+}
+
+section.section-menu-mobile .menu_item .menu_title {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6e2626;
+  margin-bottom: 0;
+}
+
+section.section-menu-mobile .menu_item p {
+  font-family: 'Open Sans', sans-serif;
+  color: #6e2626;
+  font-size: 12px;
+}
+
+section.section-menu-mobile .menu_item .menu_img {
+  max-width: 95px;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+}
+
+section.section-menu-mobile .menu_item .menu_title {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6e2626;
+  margin-bottom: 0;
+}
+
+section.section-menu-mobile .menu_item p {
+  font-family: 'Open Sans', sans-serif;
+  color: #6e2626;
+  font-size: 12px;
+}
+
+section.section-menu-mobile .menu_item .menu_price {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #6e2626;
+}
+
+/************************************************
 
 CSS REGLER FOR SECTIONS PÅ BESTILLINGS SIDEN
 
 *************************************************/
-  section.section-order {
-    padding: 50px 13px;
-    background-color: #ffffff;
-  }
-  /** CSS regler for ordre indhold **/
-  section.section-order .order-content {
-    padding-top: 73px;
-    padding-left: 47px;
-    padding-right: 47px;
-  }
-  section.section-order .order-content .order-box {
-    margin-bottom: 26px;
-    border-bottom: 1px solid #6e2626;
-  }
-  section.section-order .order-content h2 {
-    margin-bottom: 50px;
-  }
-  section.section-order .order-content .order-box h3 {
-    font-family: 'HeliosBold', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #6e2626;
-    margin-bottom: 0;
-  }
-  section.section-order .order-content .order-box p {
-    font-family: 'Open Sans', sans-serif;
-    color: #6e2626;
-    font-size: 12px;
-  }
-  section.section-order .order-price-box {
-    display: flex;
-    background-color: #6e2626;
-    color: #ffffff;
-    border-radius: 6px;
-    max-width: 250px;
-    margin: 0 auto;
-    padding: 14px;
-  }
-  section.section-order .order-price-box h3 {
-    display: flex;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  /** CSS regler for ordre formular **/
-  section.section-order .order-form {
-    margin-top: 70px;
-    padding-left: 47px;
-    padding-right: 47px;
-  }
-  section.section-order .order-form p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    color: #6e2626;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  section.section-order .order-form .form-control {
-    margin: auto;
-    margin-bottom: 24px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
-  }
-  section.section-order .order-form input::placeholder, section.section-order .order-form textarea::placeholder {
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 11px !important;
-    color: #b0b0b0 !important;
-  }
-  section.section-order .order-form .form-check label {
-    margin-right: 29px;
-  }
-  section.section-order .order-form .form-check label .label-text {
-    display: block;
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 9px !important;
-    color: #6e2626 !important;
-  }
-  section.section-order .order-form .btn-green {
-    margin-top: 30px;
-  }
-  /************************************************
+
+section.section-order {
+  padding: 50px 13px;
+  background-color: #ffffff;
+}
+
+/** CSS regler for ordre indhold **/
+
+section.section-order .order-content {
+  padding-top: 73px;
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+section.section-order .order-content .order-box {
+  margin-bottom: 26px;
+  border-bottom: 1px solid #6e2626;
+}
+
+section.section-order .order-content h2 {
+  margin-bottom: 50px;
+}
+
+section.section-order .order-content .order-box h3 {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6e2626;
+  margin-bottom: 0;
+}
+
+section.section-order .order-content .order-box p {
+  font-family: 'Open Sans', sans-serif;
+  color: #6e2626;
+  font-size: 12px;
+}
+
+section.section-order .order-price-box {
+  display: flex;
+  background-color: #6e2626;
+  color: #ffffff;
+  border-radius: 6px;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+section.section-order .order-price-box h3 {
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/** CSS regler for ordre formular **/
+
+section.section-order .order-form {
+  margin-top: 70px;
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+section.section-order .order-form p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #6e2626;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.section-order .order-form .form-control {
+  margin: auto;
+  margin-bottom: 24px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+}
+
+section.section-order .order-form input::placeholder, section.section-order .order-form textarea::placeholder {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 11px !important;
+  color: #b0b0b0 !important;
+}
+
+section.section-order .order-form .form-check label {
+  margin-right: 29px;
+}
+
+section.section-order .order-form .form-check label .label-text {
+  display: block;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 9px !important;
+  color: #6e2626 !important;
+}
+
+section.section-order .order-form .btn-green {
+  margin-top: 30px;
+}
+
+/************************************************
 
 CSS REGLER FOR SECTIONS PÅ KONTAKT SIDEN PÅ MOBILE
 
 *************************************************/
-  section.section-contact-mobile {
-    padding: 50px 13px;
-    background-color: #ffffff;
+
+section.section-desk-contact-form, section.section-desk-contact-info {
+  display: none;
+}
+
+section.section-contact-mobile {
+  padding: 50px 13px;
+  background-color: #ffffff;
+}
+
+/** Css regler for kontaktoplysninger **/
+
+section.section-contact-mobile .contact-info-box {
+  background-color: #6e2626;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+section.section-contact-mobile .contact-info-box:first-child {
+  margin-top: 50px;
+}
+
+section.section-contact-mobile .contact-info-box .contact-info-meta {
+  display: inline-block;
+}
+
+section.section-contact-mobile .contact-info-box img {
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
+section.section-contact-mobile .contact-info-box .contact-info-meta h3 {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #eaae48;
+  margin-bottom: 0;
+}
+
+section.section-contact-mobile .contact-info-box .contact-info-meta p {
+  font-family: 'Open sans', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/** Css regler for kontaktoplysninger **/
+
+section.section-contact-mobile .contact-form-container {
+  background-color: #6e2626;
+  border-radius: 6px;
+  margin-top: 21px;
+  padding: 20px 14px;
+}
+
+section.section-contact-mobile .contact-form-container .contact-form-meta h3 {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #eaae48;
+  text-transform: uppercase;
+}
+
+section.section-contact-mobile .contact-form-container .contact-form-meta p {
+  font-family: 'Open sans', sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/** Css regler for kontaktformular **/
+
+section.section-contact-mobile .contact-form-container .form-control {
+  border: none;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+  margin-bottom: 21px;
+}
+
+section.section-contact-mobile .contact-form-container .btn {
+  margin-bottom: 26px;
+}
+
+/** Css regler Google Map **/
+
+section.section-contact-mobile .heading-area {
+  margin-top: 41px;
+  margin-bottom: 41;
+}
+
+section.section-contact-mobile .heading-area h3 {
+  display: block;
+  overflow: hidden;
+}
+
+section.section-contact-mobile .heading-area h3:before, section.section-contact-mobile .heading-area h3:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: #6e2626;
+  position: relative;
+  vertical-align: middle;
+}
+
+section.section-contact-mobile .heading-area h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+section.section-contact-mobile .heading-area h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/************************************************
+
+CSS REGLER FOR SECTIONS PÅ KONTAKT SIDEN PÅ DESKTOP
+
+*************************************************/
+
+@media(min-width: 922px) {
+  section.section-desk-contact-form, section.section-desk-contact-info {
+    display: block;
   }
-  /** Css regler for kontaktoplysninger **/
-  section.section-contact-mobile .contact-info-box {
+  .section-contact-mobile {
+    display: none;
+  }
+  /** Css regler for kontakt oplysninger + Google map på desktop */
+  section.section-desk-contact-info {
+    padding: 90px 50px;
     background-color: #6e2626;
-    border-radius: 6px;
-    margin-bottom: 15px;
-  }
-  section.section-contact-mobile .contact-info-box:first-child {
-    margin-top: 50px;
-  }
-  section.section-contact-mobile .contact-info-box .contact-info-meta {
-    display: inline-block;
-  }
-  section.section-contact-mobile .contact-info-box img {
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 20px;
-  }
-  section.section-contact-mobile .contact-info-box .contact-info-meta h3 {
-    font-family: 'HeliosBold', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    color: #eaae48;
-    margin-bottom: 0;
-  }
-  section.section-contact-mobile .contact-info-box .contact-info-meta p {
-    font-family: 'Open sans', sans-serif;
-    font-size: 12px;
     color: #ffffff;
   }
-  /** Css regler for kontaktoplysninger **/
-  section.section-contact-mobile .contact-form-container {
-    background-color: #6e2626;
-    border-radius: 6px;
-    margin-top: 21px;
-    padding: 20px 14px;
-  }
-  section.section-contact-mobile .contact-form-container .contact-form-meta h3 {
-    font-family: 'HeliosBold', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    color: #eaae48;
-    text-transform: uppercase;
-  }
-  section.section-contact-mobile .contact-form-container .contact-form-meta p {
-    font-family: 'Open sans', sans-serif;
-    font-size: 13px;
+  section.section-desk-contact-info h2 {
+    font-family: 'HeliosSemibold', sans-serif;
     color: #ffffff;
+    margin-bottom: 25px;
+  }
+  section.section-desk-contact-info .contact-desk-info-meta {
     margin-bottom: 30px;
   }
-  /** Css regler for kontaktformular **/
-  section.section-contact-mobile .contact-form-container .form-control {
-    border: none;
-    box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
-    margin-bottom: 21px;
+  section.section-desk-contact-info .contact-desk-info-meta:last-child {
+    margin-top: 80px;
   }
-  section.section-contact-mobile .contact-form-container .btn {
-    margin-bottom: 26px;
-  }
-  /** Css regler Google Map **/
-  section.section-contact-mobile .heading-area {
-    margin-top: 41px;
-    margin-bottom: 41;
-  }
-  section.section-contact-mobile .heading-area h3 {
-    display: block;
-    overflow: hidden;
-  }
-  section.section-contact-mobile .heading-area h3:before, section.section-contact-mobile .heading-area h3:after {
-    content: "";
-    display: inline-block;
-    width: 50%;
-    height: 2px;
-    background-color: #6e2626;
-    position: relative;
+  section.section-desk-contact-info .contact-desk-info-meta span {
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    margin-left: 18px;
     vertical-align: middle;
   }
-  section.section-contact-mobile .heading-area h3:before {
-    right: 0.5em;
-    margin-left: -50%;
+  section.section-desk-contact-info .contact-desk-info-meta .phone, section.section-desk-contact-info .contact-desk-info-meta .mail, section.section-desk-contact-info .contact-desk-info-meta .adress {
+    width: 24px;
   }
-  section.section-contact-mobile .heading-area h3:after {
-    left: 0.5em;
-    margin-right: -50%;
+  section.section-desk-contact-info .soc li a {
+    background-color: #ffffff;
+    color: #6e2626;
+    width: 90px;
+    height: 90px;
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
   }
-  /************************************************
+  section.section-desk-contact-info iframe {
+    margin-top: 33px;
+  }
+  /** Css regler for kontakt formular */
+  section.section-desk-contact-form {
+    padding: 90px 0;
+  }
+  section.section-desk-contact-form p {
+    padding-left: 52px;
+    padding-right: 57px;
+  }
+  section.section-desk-contact-form h2 {
+    font-size: 79px;
+    margin-bottom: 70px;
+  }
+  section.section-desk-contact-form .form-control {
+    margin-bottom: 25px;
+    max-width: 460px;
+  }
+  section.section-desk-contact-form textarea.form-control {
+    height: 150px;
+  }
+}
+
+/************************************************
+
+CSS REGLER FOR SECTIONS PÅ VI TILBTYDER SIDEN
+
+*************************************************/
+
+/** Css regler for favorite sandwich section **/
+
+section.section-service-favorite-sandwich {
+  background-color: #6e2626;
+  color: #fffff;
+  padding: 50px 55px;
+}
+
+section.section-service-favorite-sandwich h3 {
+  margin-top: 66px;
+}
+
+section.section-service-favorite-sandwich p {
+  font-family: 'Open sans', sans-serif;
+  padding-right: 142px;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+section.section-service-favorite-sandwich a {
+  font-family: 'HeliosBold', sans-serif;
+  color: #ffffff;
+  margin-left: 322px;
+}
+
+section.section-service-favorite-sandwich img {
+  margin-left: 10px;
+}
+
+/** Css regler for firma bestilling sektion **/
+
+section.section-service-firma {
+  padding: 50px 55px;
+  color: #6e2626;
+}
+
+section.section-service-firma h2 {
+  margin-bottom: 40px;
+}
+
+section.section-service-firma p {
+  padding-right: 231px;
+  margin-bottom: 40px;
+}
+
+/************************************************
 
 CSS REGLER FOR SOCIALE MEDIER IKONER
 
 *************************************************/
+
+@font-face {
+  font-family: 'si';
+  src: url("../fonts/socicon.eot");
+  src: url("../fonts/socicon.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon.woff") format("woff"), url("../fonts/socicon.ttf") format("truetype"), url("../fonts/ocicon.svg#icomoonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
-    font-family: 'si';
-    src: url("../fonts/socicon.eot");
-    src: url("../fonts/socicon.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon.woff") format("woff"), url("../fonts/socicon.ttf") format("truetype"), url("../fonts/ocicon.svg#icomoonregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
+    font-family: si;
+    src: url("../fonts/socicon.svg") format(svg);
   }
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    @font-face {
-      font-family: si;
-      src: url("../fonts/socicon.svg") format(svg);
-    }
-  }
-  .soc {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .soc li {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-  }
-  .soc li a {
-    font-family: si !important;
-    font-style: normal;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    position: relative;
-    z-index: 1;
-    width: 35px;
-    height: 35px;
-    line-height: 33px;
-    font-size: 15px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 50%;
-    margin-right: 10px;
-    color: #ffffff !important;
-    background-color: #6e2626 !important;
-  }
-  .soc-icon-last {
-    margin: 0 !important;
-  }
-  .soc-facebook:before {
-    content: '\e041';
-  }
-  .soc-instagram:before {
-    content: '\e057';
-  }
-  /************************************************
+}
+
+.soc {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.soc li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.soc li a {
+  font-family: si !important;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  line-height: 33px;
+  font-size: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: #6e2626;
+}
+
+.soc-icon-last {
+  margin: 0 !important;
+}
+
+.soc-facebook:before {
+  content: '\e041';
+}
+
+.soc-instagram:before {
+  content: '\e057';
+}
+
+/************************************************
 
 CSS REGLER FOR CAROUSEL/SLIDER
 
 *************************************************/
-  /* carousel */
-  #menu-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 30px;
-  }
-  /* Kontrol knapper  */
-  #menu-carousel .carousel-control {
-    background: none;
-    color: #222;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px;
-  }
-  /* Forrige knap  */
-  #menu-carousel .carousel-control.left {
-    left: 15px;
-  }
-  /* Næste knap  */
-  #menu-carousel .carousel-control.right {
-    right: 15px !important;
-  }
-  .item blockquote {
-    color: #ffffff;
-    font-size: 14px;
-    border-left: none;
-    margin: 0;
-  }
-  .item blockquote img {
-    margin-bottom: 10px;
-  }
-  /************************************************
+
+/* carousel */
+
+#menu-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Kontrol knapper  */
+
+#menu-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+/* Forrige knap  */
+
+#menu-carousel .carousel-control.left {
+  left: 15px;
+}
+
+/* Næste knap  */
+
+#menu-carousel .carousel-control.right {
+  right: 15px !important;
+}
+
+.item blockquote {
+  color: #ffffff;
+  font-size: 14px;
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote img {
+  margin-bottom: 10px;
+}
+
+/************************************************
 
 CSS REGLER FOR MODAL PÅ MOBILE
 
 *************************************************/
-  .close {
-    opacity: 1;
-  }
-  .close img {
-    width: 24px;
-  }
-  .modal-dialog {
-    margin: 80px auto;
-    max-width: 280px;
-  }
-  .modal-dialog .modal-content .modal-header {
-    border-bottom: none;
-    padding: 15px 15px 0 15px;
-  }
-  .modal-dialog .modal-content .modal-header .modal-title {
-    font-family: 'HeliosBold', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #6e2626;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .modal-dialog .modal-content .modal-header p {
-    font-family: 'Open Sans', sans-serif;
-    color: #6e2626;
-    font-size: 13px;
-    text-align: center;
-  }
-  .modal-dialog .modal-content .modal-header .modal-price {
-    font-family: 'HeliosBold', sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-    color: #6e2626;
-    text-align: center;
-  }
-  .modal-dialog .modal-content .modal-body {
-    padding: 0 15px 15px 15px;
-  }
-  .modal-dialog .modal-content .modal-body h5 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    color: #6e2626;
-    margin-top: 30px;
-    margin-bottom: 19px;
-  }
-  .modal-dialog .modal-content .modal-body img {
-    max-width: 95px;
-    box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
-  }
-  .modal-dialog .modal-content .modal-body .form-control {
-    max-width: 185px;
-    margin: auto;
-    border: none;
-    box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
-  }
-  .modal-dialog .modal-content .modal-footer {
-    border-top: none;
-    text-align: center;
-  }
-  .modal-dialog .modal-content .modal-footer .btn-green {
-    margin-bottom: 13px;
-  }
-  .modal-dialog .modal-content .modal-footer .btn-brown {
-    margin-bottom: 30px;
-  }
+
+.close {
+  opacity: 1;
+}
+
+.close img {
+  width: 24px;
+}
+
+.modal-dialog {
+  margin: 80px auto;
+  max-width: 280px;
+}
+
+.modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+  padding: 15px 15px 0 15px;
+}
+
+.modal-dialog .modal-content .modal-header .modal-title {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #6e2626;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.modal-dialog .modal-content .modal-header p {
+  font-family: 'Open Sans', sans-serif;
+  color: #6e2626;
+  font-size: 13px;
+  text-align: center;
+}
+
+.modal-dialog .modal-content .modal-header .modal-price {
+  font-family: 'HeliosBold', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #6e2626;
+  text-align: center;
+}
+
+.modal-dialog .modal-content .modal-body {
+  padding: 0 15px 15px 15px;
+}
+
+.modal-dialog .modal-content .modal-body h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #6e2626;
+  margin-top: 30px;
+  margin-bottom: 19px;
+}
+
+.modal-dialog .modal-content .modal-body img {
+  max-width: 95px;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+}
+
+.modal-dialog .modal-content .modal-body .form-control {
+  max-width: 185px;
+  margin: auto;
+  border: none;
+  box-shadow: rgba(0, 0, 0, .117647) 0 5px 3px;
+}
+
+.modal-dialog .modal-content .modal-footer {
+  border-top: none;
+  text-align: center;
+}
+
+.modal-dialog .modal-content .modal-footer .btn-green {
+  margin-bottom: 13px;
+}
+
+.modal-dialog .modal-content .modal-footer .btn-brown {
+  margin-bottom: 30px;
+}

@@ -77,7 +77,7 @@
             <br />
             <div class="button-container">
               <a href="#" class="btn btn-green one">Firma bestilling</a>
-              <a href="#" class="btn btn-green">Bestil nu</a>
+              <a href="menu.html" class="btn btn-green">Bestil nu</a>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos numquam exercitationem, repudiandae, minima magni aliquam odit enim fugiat perspiciatis accusantium fuga ex ullam consequatur. Vitae dignissimos quaerat ea facere cupiditate!</p>
             <br />
             <!-- CTA knap -->
-            <a href="#" class="btn btn-brown">Læs mere</a>
+            <a href="om-os.html" class="btn btn-brown">Læs mere</a>
           </div>
           <div class="col-lg-5">
             <img src="images/test.jpg" alt="Test" />
@@ -158,12 +158,38 @@
           </div>
         </div>
         <div class="row text-center">
-          <a href="#" class="btn btn-green ">Tilføj til kurv</a>
-          <a href="#" class="btn btn-brown-rev">Se menu kort</a>
+          <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModal">Tilføj til kurv</button>
+          <a href="menu.html" class="btn btn-brown-rev">Se menu kort</a>
         </div>
       </div>
     </section>
     <!-- Slut ektion for menu -->
+
+    <!-- Pop up vindue for det specifikke madvalg  -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Mad indhold-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><img src="images/close.svg" alt="Close button" /></button>
+            <h4 class="modal-title">Katjas Cafeburger</h4>
+            <P>Kylling, brød, ost, chilli & chilli</P>
+            <h5 class="modal-price">65,-</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/test.jpg" class="img-circle menu_img" />
+            <h5>Hvor mange antal?</h5>
+            <input type="text" class="form-control">
+          </div>
+          <div class="modal-footer">
+            <!-- CTA knapper - enten gå til bestilling eller fortsætte indkøb -->
+            <a href="bestilling.html" class="btn btn-green" title="Gå til bestiling">Gå til bestilling</a>
+            <button type="button" class="btn btn-brown" data-dismiss="modal">Fortsæt indkøb</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <!-- Sektion for vi tilbyder desk -->
     <section class="section-offer-desk">
@@ -208,7 +234,7 @@
             <br />
             <h3 class="text-uppercase fcolor-white heading-heliosSemibold">Har vi været odders favorit madsted <br />for mange familer</h3>
             <br />
-            <a href="#" class="btn btn-orange ">Læs mere om os</a>
+            <a href="om-os.html" class="btn btn-orange ">Læs mere om os</a>
           </div>
         </div>
       </div>

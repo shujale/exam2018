@@ -509,10 +509,8 @@ section.section-homepage-menu .btn-green, section.section-homepage-menu .btn-bro
 /** Section for mobile om os **/
 
 section.section-mobile-about {
-  background: url(../images/test.jpg) no-repeat center center;
-  background-size: cover;
   padding: 50px 19px;
-  position: relative;
+  color: #6e2626;
 }
 
 section.section-mobile-about h3 {
@@ -659,7 +657,8 @@ section.section-bye {
     padding: 100px 0;
   }
   section.section-offer-desk img {
-    width: 150px;
+    width: 190px;
+    height: 190px;
   }
   /* Css regler til ses */
   section.section-bye {
@@ -1155,7 +1154,7 @@ section.section-about-mobile .service-items a {
 }
 
 section.section-about-mobile .service-items p {
- color: #fff; 
+ color: #fff;
 }
 
 section.section-about-mobile .service-items .service-content {
